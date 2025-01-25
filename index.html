@@ -9,9 +9,16 @@
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <link rel="stylesheet" href="./css/styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/"
+      }
+    }
+  </script>
 </head>
 <body>  
-
   <section id="demos" class="invisible">
 
     <div id="liveView" class="videoView">
@@ -24,6 +31,7 @@
       <div style="position: relative;">
         <video id="webcam" style="position: absolute" autoplay playsinline></video>
         <canvas class="output_canvas" id="output_canvas" style="position: absolute; left: 0px; top: 0px;"></canvas>
+        <div id="3dscene" style="min-height: 480px; min-width: 640px;"></div>
       </div>
     </div>
     <div class="blend-shapes">
