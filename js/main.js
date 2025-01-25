@@ -244,8 +244,8 @@ function drawBlendShapes(el, blendShapes) {
             // object.position.y = transform.position.z + 40;
             // object.position.z = - transform.position.y;
             object.rotation.x = transform.rotation.x;
-            object.rotation.y = transform.rotation.z;
-            object.rotation.z = - transform.rotation.y;
+            object.rotation.y = transform.rotation.y;
+            object.rotation.z = transform.rotation.z;
         }
         if ( results.faceBlendshapes.length > 0 ) {
             // const faceBlendshapes = results.faceBlendshapes[ 0 ].categories;
